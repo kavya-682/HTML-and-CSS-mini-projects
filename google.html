@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google From</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Personal_details</legend>
+            <table>
+                <tr><td><label for="Firstname">First Name:</label></td><td><input type="text" required id="Firstname" pattern="[a-zA-Z]{5,20}"></td></tr>
+                <tr><td><label for="Lastname">Last Name:</label></td><td><input type="text" required id="Lastname" pattern="[a-zA-Z]{5,20}"></td></tr>
+                <tr><td><label for="email">Email:</label></td><td><input type="text" required id="email" pattern="[a-z][a-zA-Z0-9.]{8,}@gmail.com"></td></tr>
+                <tr><td><label for="number">Phone:</label></td><td><input type="text" required id="number" pattern="[6-9][0-9]{9}"><br></td></tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Education_Details</legend>
+            <label>Year of Graduation</label>
+            <input list="Year of Graduation">
+            <datalist id="Year of Graduation">
+            <option value="">2021</option>
+            <option value="">2022</option>
+            <option value="">2023</option>
+            <option value="">2024</option>
+            <option value="">2025</option>
+        </datalist>
+        
+            
+        <br><br>
+        <label>Gender</label><br>
+        <input type="radio" required id="Male" name="Gender"><label for="Male">Male  </label>
+        <input type="radio" required id="Female" name="Gender"><label for="Female">Female  </label>
+        <input type="radio" required id="Other" name="Gender"><label for="Other">Other  </label><br><br>
+        <label>Skills: </label><br>
+        <input type="checkbox" required id="Java">
+        <label for="Java">Java</label><br>
+        <input type="checkbox" required id="SQL">
+        <label for="SQL">SQL</label><br>
+        <input type="checkbox"  id="HTML">
+        <label for="HTML">HTML</label><br>
+        <input type="checkbox"  id="CSS">
+        <label for="CSS">CSS</label>
+        </fieldset>
+             <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
